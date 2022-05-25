@@ -10,6 +10,10 @@ body {
     background: linear-gradient(135deg, rgba(252,70,107,1) 0%, rgba(63,94,251,1) 100%) no-repeat;
 }
 
+hr {
+    height: 2px;
+}
+
 .container {
     width: 100%;
     max-width: 1110px;
@@ -152,6 +156,23 @@ body {
     align-items: center;
 }
 
+.qrgen-linktext {
+    font-size: 20px;
+    font-weight: normal;
+
+}
+
+#qrCodeText {
+    width: 100%;
+    height: 58px;
+    resize: none;
+    border: 2px solid #333333;
+    border-radius: 5px;
+    line-height: 1;
+    font-size: 15px;
+    padding: 5px;
+}
+
 
 
 
@@ -193,6 +214,7 @@ body {
     flex-direction: column;
     align-content: space-around;
     justify-content: space-between;
+    position: relative;
 }
 
 .qrgen__result_title {
@@ -211,6 +233,24 @@ body {
     align-items: center;
     justify-content: center;
 }
+
+.genqr-button {
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    height: 35px;
+    transform: translateX(-50%);
+    display: inline-block;
+    color: white;
+    border: 2px solid #333333;
+    padding: 0px 15px;
+    border-radius: 10px;
+    font-family: 'Koulen';
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+    background: linear-gradient(135deg, rgba(252,70,107,1) 0%, rgba(63,94,251,1) 100%) no-repeat;
+  }
 
 .qr {
     width: 350px;

@@ -11,7 +11,7 @@
     <link rel="icon" href="img/qr-code.png" type="image/x-icon" class="icon">
     <link rel="stylesheet" href="css/style.css">
     <script src="js/script.js" defer></script>
-    <script src="http://cosmic.mearie.org/2011/01/qrjs/qr.js"></script>
+    <!-- <script src="http://cosmic.mearie.org/2011/01/qrjs/qr.js"></script> -->
 </head>
 <body>
     <header class="header">
@@ -34,11 +34,13 @@
                         <div class="accordion__item">
                             <input class="accordion__item-input" type="radio" name="accordion-1" checked id="accordion-1">
                             <label for="accordion-1" class="accordion__item-trigger label-text">
-                                trigger 1
+                                text
                             </label>
                             <div class="accordion__item-content">
-                                <input type="text" id="qrCodeText">
-                                <input type="button" value="Generate" id="generateQRCode">
+                                <hr>
+                                <h3 class="qrgen-linktext">your text</h3>
+                                <textarea name="qrCodeText" id="qrCodeText" maxlength="255" placeholder="https://"></textarea>
+                                
                             </div>
                         </div>
                         <div class="accordion__item">
@@ -62,6 +64,7 @@
                     <div class="qrgen__result_ended" id="result">
                         <!-- <img src="img/qrcod_wTE.png" alt="" class="qr"> -->
                     </div>
+                    <input type="button"class="genqr-button" value="Generate" id="generateQRCode">
                 </div>
                 <div class="qrgen__info">
                     <div class="qrgen__info__block">
