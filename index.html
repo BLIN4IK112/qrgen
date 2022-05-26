@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QRGEN</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Koulen&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Koulen&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="img/qr-code.png" type="image/x-icon" class="icon">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__nav">
+                <div class="header__logo">
+                    <img src="img/lucide_qr-code.svg" class="icon" alt="QR">
+                    <h1 class="header__title">QR GEN</h1>
+                </div>
+                <!-- <div class="header_block"></div> -->
+            </div>
+        </div>
+    </header>
+    <div class="qrgen">
+        <div class="container">
+            <div class="qrgen__content">
+                <div class="qrgen__settings">
+                    <h2 class="qrgen__settings_title">settings</h2>
+                    <div class="accordion__qrgen">
+                        <div class="accordion__item">
+                            <input class="accordion__item-input" type="radio" name="accordion-1" checked id="accordion-1">
+                            <label for="accordion-1" class="accordion__item-trigger label-text">
+                                text
+                            </label>
+                            <div class="accordion__item-content">
+                                <hr>
+                                <h3 class="qrgen-linktext">your text</h3>
+                                <textarea name="qrCodeText" id="qrCodeText" maxlength="115" placeholder="https://"></textarea>
+                                
+                            </div>
+                        </div>
+                        <div class="accordion__item">
+                            <input class="accordion__item-input" type="radio" name="accordion-1" id="accordion-2">
+                            <label for="accordion-2" class="accordion__item-trigger label-text">
+                                color
+                            </label>
+                            <div class="accordion__item-content">
+                                <hr>
+                                <div class="color__flex">
+                                    <div class="color-bg">
+                                        <h3 class="qrgen-linktext">bacground</h3>
+                                        <input type="color" name="color" class="input__color-qrgen" id="input__qrgen-bg" value="#ffffff">
+                                    </div>
+                                    <div class="color-bg">
+                                        <h3 class="qrgen-linktext">foreground</h3>
+                                        <input type="color" name="color" class="input__color-qrgen" id="input__qrgen-fg" value="#000000">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion__item">
+                            <input class="accordion__item-input" type="radio" name="accordion-1" id="accordion-3">
+                            <label for="accordion-3" class="accordion__item-trigger label-text">
+                                parameters
+                            </label>
+                            <div class="accordion__item-content">
+                                <hr>
+                                <div class="qr__options">
+                                    <div class="qr__options-item">
+                                        <h3 class="qrgen-linktext">size</h3> 
+                                        <select name="select__size" class="select__option" id="select__size">
+                                            <option value="100" selected>100</option>
+                                            <option value="150">150</option>
+                                            <option value="200">200</option>
+                                            <option value="250">250</option>
+                                        </select>
+                                    </div>
+                                    <div class="qr__options-item">
+                                        <h3 class="qrgen-linktext">accuracy</h3>
+                                        <select name="select__size" class="select__option" id="select__accuracy">
+                                            <option value="l" selected>l - low</option>
+                                            <option value="m">m - medium</option>
+                                            <option value="q">q - quality</option>
+                                            <option value="h">h - hight</option>
+                                        </select> 
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="qrgen__result">
+                    <h2 class="qrgen__result_title">your qr code</h2>
+                    <div class="qrgen__result_ended" id="result">
+
+                    </div>
+                    <input type="button"class="genqr-button" value="Generate" id="generateQRCode">
+                </div>
+                <div class="qrgen__info">
+                    <div class="qrgen__info__block">
+                        <h2 class="qrgen__info__block-title">about qr</h2>
+                        <hr>
+                        <p class="qrgen__info__block-subtitle">QR код «QR - Quick Response - Быстрый Отклик» — это двухмерный штрихкод (бар-код), предоставляющий информацию для быстрого ее распознавания с помощью камеры на мобильном телефоне. При помощи QR-кода можно закодировать любую информацию, например: текст, номер телефона, ссылку на сайт или визитную карточку.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer name"></div>
+        </div>
+    </footer>
+</body>
+</html>
