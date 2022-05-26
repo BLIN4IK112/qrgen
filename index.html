@@ -39,30 +39,64 @@
                             <div class="accordion__item-content">
                                 <hr>
                                 <h3 class="qrgen-linktext">your text</h3>
-                                <textarea name="qrCodeText" id="qrCodeText" maxlength="255" placeholder="https://"></textarea>
+                                <textarea name="qrCodeText" id="qrCodeText" maxlength="115" placeholder="https://"></textarea>
                                 
                             </div>
                         </div>
                         <div class="accordion__item">
                             <input class="accordion__item-input" type="radio" name="accordion-1" id="accordion-2">
                             <label for="accordion-2" class="accordion__item-trigger label-text">
-                                trigger 2
+                                color
                             </label>
-                            <div class="accordion__item-content">content 2</div>
+                            <div class="accordion__item-content">
+                                <hr>
+                                <div class="color__flex">
+                                    <div class="color-bg">
+                                        <h3 class="qrgen-linktext">bacground</h3>
+                                        <input type="color" name="color" class="input__color-qrgen" id="input__qrgen-bg" value="#ffffff">
+                                    </div>
+                                    <div class="color-bg">
+                                        <h3 class="qrgen-linktext">foreground</h3>
+                                        <input type="color" name="color" class="input__color-qrgen" id="input__qrgen-fg" value="#000000">
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         <div class="accordion__item">
                             <input class="accordion__item-input" type="radio" name="accordion-1" id="accordion-3">
                             <label for="accordion-3" class="accordion__item-trigger label-text">
-                                trigger 3
+                                parameters
                             </label>
-                            <div class="accordion__item-content">content 3</div>
+                            <div class="accordion__item-content">
+                                <hr>
+                                <div class="qr__options">
+                                    <div class="qr__options-item">
+                                        <h3 class="qrgen-linktext">size</h3> 
+                                        <select name="select__size" class="select__option" id="select__size">
+                                            <option value="100" selected>100</option>
+                                            <option value="150">150</option>
+                                            <option value="200">200</option>
+                                            <option value="250">250</option>
+                                        </select>
+                                    </div>
+                                    <div class="qr__options-item">
+                                        <h3 class="qrgen-linktext">accuracy</h3>
+                                        <select name="select__size" class="select__option" id="select__accuracy">
+                                            <option value="l" selected>l - low</option>
+                                            <option value="m">m - medium</option>
+                                            <option value="q">q - quality</option>
+                                            <option value="h">h - hight</option>
+                                        </select> 
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="qrgen__result">
                     <h2 class="qrgen__result_title">your qr code</h2>
                     <div class="qrgen__result_ended" id="result">
-                        <!-- <img src="img/qrcod_wTE.png" alt="" class="qr"> -->
+
                     </div>
                     <input type="button"class="genqr-button" value="Generate" id="generateQRCode">
                 </div>
